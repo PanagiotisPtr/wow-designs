@@ -1,0 +1,30 @@
+.logo {
+  height: 25vh;
+}
+
+.small-logo {
+  height: 5vh;
+  margin-left: 0.75vw;
+  margin-right: 0.75vw;
+}
+
+.small-margin-top {
+  margin-top: 5vh;
+}
+
+.small-margin-right {
+  margin-right: 3vw;
+}
+
+.small-margin-left {
+  margin-left: 3vw;
+}
+
+.link {
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: underline black;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  cursor: pointer;
+}
