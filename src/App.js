@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { NavBar, InfoBar } from './Components/NavBar/NavBar';
+import Hero from './Components/Hero/Hero';
 
 // Logos
 import logo from './Images/NavBarLogo.png';
@@ -13,6 +14,9 @@ import searchLogo from './Images/SearchLogo.png';
 import greeceLogo from './Images/GreeceLogo.png';
 import userLogo from './Images/UserLogo.png';
 import cartLogo from './Images/CartLogo.png';
+
+// Hero Banner
+import HeroBanner from './Images/hero-banner.png';
 
 function App() {
   return (
@@ -41,6 +45,10 @@ function App() {
           { text: 'ΑΜΕΣΗ ΚΑΙ ΔΩΡΕΑΝ ΠΑΡΑΛΑΒΗ ΑΠΟ ΤΟ ΚΑΤΑΣΤΗΜΑ', extra: 'Βετσοπούλου 43, Αλεξάνδρεια'}
         ]}
       />
+
+      <Hero banner={HeroBanner} />
+
+      
     </div>
   );
 }
