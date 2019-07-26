@@ -35,3 +35,15 @@
 .stick-left {
   margin-right: auto;
 }
+
+.clickable {
+  cursor: pointer;
+}
+
+.main-layout > * {
+  margin-bottom: 10em;
+}
+
+.main-layout .subsection {
+  margin-bottom: 5em;
+}
