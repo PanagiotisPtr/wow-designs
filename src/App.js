@@ -18,6 +18,12 @@ import cartLogo from './Images/CartLogo.png';
 // Hero Banner
 import HeroBanner from './Images/hero-banner.png';
 
+// Gallery
+import GalleryImageLeft from './Images/Gallery/Gallery1.png';
+import GalleryImageCenter from './Images/Gallery/Gallery2.png';
+import GalleryImageRight from './Images/Gallery/Gallery3.png';
+import Gallery from './Components/Gallery/Gallery';
+
 function App() {
   return (
     <div>
@@ -48,7 +54,13 @@ function App() {
 
       <Hero banner={HeroBanner} />
 
-      
+      <Gallery
+        images={[
+          {src: GalleryImageLeft, alt: 'Cool Dress 1'},
+          {src: GalleryImageCenter, alt: 'Cool Dress 2'},
+          {src: GalleryImageRight, alt: 'Cool Dress 3'}
+        ]}
+      />
     </div>
   );
 }
