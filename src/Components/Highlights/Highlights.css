@@ -1,0 +1,21 @@
+.highlight-item {
+}
+
+.highlight-items {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.highlight-container {
+  flex: 1;
+  height: 45em;
+}
+
+.highlight-container .label {
+  font-size: 1.2em;
+}
+
+.highlight-container .price {
+  font-weight: bold;
+  font-size: 1.8em;
+}
