@@ -28,3 +28,31 @@
   margin-left: 1vw;
   cursor: pointer;
 }
+
+.info-bar {
+  margin-top: 8vh;
+  height: auto;
+  background: #F99D9D;
+}
+
+.info-text {
+  flex: 1;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border: solid black 1px;
+}
+
+.info-text .text {
+  align-self: center;
+  text-align: center;
+}
+
+.info-text .simple {
+  width: 10vw;
+}
+
+.info-text .large {
+  font-size: 1.4em;
+  font-weight: bold;
+  width: auto;
+}

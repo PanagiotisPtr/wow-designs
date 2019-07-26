@@ -1,46 +1,56 @@
 import React from 'react';
 import './NavBar.css';
-import logo from '../../Images/NavBarLogo.png';
 
-import facebookLogo from '../../Images/FacebookLogo.png';
-import telegramLogo from '../../Images/TelegramLogo.png';
-import instagramLogo from '../../Images/InstagramLogo.png';
-
-import searchLogo from '../../Images/SearchLogo.png';
-import greeceLogo from '../../Images/GreeceLogo.png';
-import userLogo from '../../Images/UserLogo.png';
-import cartLogo from '../../Images/CartLogo.png';
-
-const Logos = () => 
+const Logos = ({leftLogos, mainLogo, rightLogos}) => 
   <div className="row-container small-margin-top">
+    
     <div className="row-container align-end stick-left small-margin-left">
-      <img className="small-logo" src={facebookLogo} alt="Facebook logo" />
-      <img className="small-logo" src={telegramLogo} alt="Telegram logo" />
-      <img className="small-logo" src={instagramLogo} alt="Instagram logo" />
+      {leftLogos && leftLogos.map(logo => <img className="small-logo" src={logo.src} alt={logo.alt} />)}
     </div>
-    <img className="logo" src={logo} alt="logo" />
+    
+    <img className="logo" src={mainLogo.src} alt={mainLogo.alt} />
+
     <div className="row-container align-end stick-right small-margin-right">
-      <img className="small-logo" src={searchLogo} alt="Search Logo" />
-      <img className="small-logo" src={greeceLogo} alt="Greece Logo" />
-      <img className="small-logo" src={userLogo} alt="User Logo" />
-      <img className="small-logo" src={cartLogo} alt="Cart Logo" />
+      {rightLogos && rightLogos.map(logo => <img className="small-logo" src={logo.src} alt={logo.alt} />)}
+    </div>
+
+  </div>;
+
+const InfoText = ({text, extra}) =>
+  <div className="col-container justify-center center-items info-text" >
+    <div className="text col-container align-center">
+      <span className="simple">{text}</span>
+      <span className="large">{extra}</span>
     </div>
   </div>;
 
+const InfoBar = ({info}) =>
+  <div className="full-width row-container info-bar">
+    
+    {info && info.map(detail =>
+      <InfoText text={detail.text} extra={detail.extra} />
+    )}
+
+  </div>
+
 const Menu = ({options}) =>
   <div className="full-width row-container justify-center">
-  <div className="row-container small-margin-top center">
+  <div className="row-container small-margin-top">
     {options && options.map(option => <h2 className="link">{option}</h2>)}
   </div>
   </div>;
 
-function NavBar() {
-  return (
-    <div>
-      <Logos />
-      <Menu options={['ΕΝΔΥΜΑΤΑ', 'ΝΕΕΣ ΑΦΙΞΕΙΣ', 'ΠΡΟΣΦΟΡΕΣ', 'PLUS-SIZE', 'ΤΣΑΝΤΕΣ']}/>
-    </div>
-  );
-}
+const NavBar = ({menu, logos}) =>
+  <div>
+    <Logos
+      leftLogos={logos.left}
+      mainLogo={logos.main}
+      rightLogos={logos.right}
+    />
+    <Menu options={menu}/>
+  </div>;
 
-export default NavBar;
+export {
+  NavBar,
+  InfoBar
+};
