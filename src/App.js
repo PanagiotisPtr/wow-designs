@@ -3,6 +3,7 @@ import './App.css';
 import { NavBar, InfoBar } from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
 import Separator from './Components/Separator/Separator';
+import SectionTitle from './Components/SectionTitle/SectionTitle';
 
 // Logos
 import logo from './Images/NavBarLogo.png';
@@ -27,7 +28,10 @@ import Gallery from './Components/Gallery/Gallery';
 
 // Separator
 import SeparatorImage from './Images/Separator.png';
-import SectionTitle from './Components/SectionTitle/SectionTitle';
+import SubMenu from './Components/SubMenu/SubMenu';
+
+// Footer Banner
+import FooterBanner from './Images/footer-banner.png';
 
 function App() {
   return (
@@ -70,6 +74,10 @@ function App() {
       <Separator image={{src: SeparatorImage, alt: 'Separator Image'}} />
 
       <SectionTitle title="ΝΕΕΣ ΠΑΡΑΛΑΒΕΣ"/>
+
+      <SubMenu menu={['ΟΛΑ ΤΑ ΕΙΔΗ', 'ΦΟΡΕΜΑΤΑ', 'ΜΠΛΟΥΖΕΣ', 'ΤΣΑΝΤΕΣ']} />
+
+      <Hero banner={FooterBanner} />
     </div>
   );
 }
