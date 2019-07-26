@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { NavBar, InfoBar } from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
+import Separator from './Components/Separator/Separator';
 
 // Logos
 import logo from './Images/NavBarLogo.png';
@@ -23,6 +24,9 @@ import GalleryImageLeft from './Images/Gallery/Gallery1.png';
 import GalleryImageCenter from './Images/Gallery/Gallery2.png';
 import GalleryImageRight from './Images/Gallery/Gallery3.png';
 import Gallery from './Components/Gallery/Gallery';
+
+// Separator
+import SeparatorImage from './Images/Separator.png';
 
 function App() {
   return (
@@ -61,6 +65,8 @@ function App() {
           {src: GalleryImageRight, alt: 'Cool Dress 3'}
         ]}
       />
+
+      <Separator image={{src: SeparatorImage, alt: 'Separator Image'}} />
     </div>
   );
 }
