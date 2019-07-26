@@ -27,6 +27,7 @@ import Gallery from './Components/Gallery/Gallery';
 
 // Separator
 import SeparatorImage from './Images/Separator.png';
+import SectionTitle from './Components/SectionTitle/SectionTitle';
 
 function App() {
   return (
@@ -67,6 +68,8 @@ function App() {
       />
 
       <Separator image={{src: SeparatorImage, alt: 'Separator Image'}} />
+
+      <SectionTitle title="ΝΕΕΣ ΠΑΡΑΛΑΒΕΣ"/>
     </div>
   );
 }
