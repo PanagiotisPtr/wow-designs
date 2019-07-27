@@ -20,7 +20,9 @@ const Thumbnails = ({photos, name, active}) =>
   </div>;
 
 const MainImage = ({src, alt}) =>
-  <img src={src} alt={alt} className="main-image"/>;
+  <div>
+    <img src={src} alt={alt} className="main-image"/>;
+  </div>;
 
 const ColorGlob = ({color, active}) =>
   <div className="clickable" >
