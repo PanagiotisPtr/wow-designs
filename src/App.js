@@ -7,6 +7,7 @@ import { Footer, CopyrightNotice } from './Components/Footer/Footer';
 
 // Routes
 import Home from './Routes/Home/Home';
+import Clothes from './Routes/Clothes/Clothes';
 
 // Router
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -50,6 +51,7 @@ const App = () =>
     
     <Router>
       <Route path="/" exact component={Home} />
+      <Route path="/clothes/" component={Clothes} />
     </Router>
     
     <Footer
