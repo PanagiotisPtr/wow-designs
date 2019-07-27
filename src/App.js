@@ -6,7 +6,7 @@ import { NavBar } from './Components/NavBar/NavBar';
 import { Footer, CopyrightNotice } from './Components/Footer/Footer';
 
 // Routes
-import Home from './Routes/Home';
+import Home from './Routes/Home/Home';
 
 // Router
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";

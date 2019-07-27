@@ -2,36 +2,36 @@ import React from 'react';
 import './Home.css';
 
 // Components
-import { InfoBar } from '../Components/NavBar/NavBar';
-import Hero from '../Components/Hero/Hero';
-import Separator from '../Components/Separator/Separator';
-import SectionTitle from '../Components/SectionTitle/SectionTitle';
-import Highlights from '../Components/Highlights/Highlights';
+import { InfoBar } from '../../Components/NavBar/NavBar';
+import Hero from '../../Components/Hero/Hero';
+import Separator from '../../Components/Separator/Separator';
+import SectionTitle from '../../Components/SectionTitle/SectionTitle';
+import Highlights from '../../Components/Highlights/Highlights';
 
 // Hero Banner
-import HeroBanner from '../Images/hero-banner.png';
+import HeroBanner from '../../Images/hero-banner.png';
 
 // Gallery
-import GalleryImageLeft from '../Images/Gallery/Gallery1.png';
-import GalleryImageCenter from '../Images/Gallery/Gallery2.png';
-import GalleryImageRight from '../Images/Gallery/Gallery3.png';
-import Gallery from '../Components/Gallery/Gallery';
+import GalleryImageLeft from '../../Images/Gallery/Gallery1.png';
+import GalleryImageCenter from '../../Images/Gallery/Gallery2.png';
+import GalleryImageRight from '../../Images/Gallery/Gallery3.png';
+import Gallery from '../../Components/Gallery/Gallery';
 
 // Separator
-import SeparatorImage from '../Images/Separator.png';
-import SubMenu from '../Components/SubMenu/SubMenu';
+import SeparatorImage from '../../Images/Separator.png';
+import SubMenu from '../../Components/SubMenu/SubMenu';
 
 // Footer Banner
-import FooterBanner from '../Images/footer-banner.png';
+import FooterBanner from '../../Images/footer-banner.png';
 
 // Highlights
-import HighlightPicTopLeft from '../Images/Highlights/Highlight1.png';
-import HighlightPicTopCenter from '../Images/Highlights/Highlight2.png';
-import HighlightPicTopRight from '../Images/Highlights/Highlight3.png';
+import HighlightPicTopLeft from '../../Images/Highlights/Highlight1.png';
+import HighlightPicTopCenter from '../../Images/Highlights/Highlight2.png';
+import HighlightPicTopRight from '../../Images/Highlights/Highlight3.png';
 
-import HighlightPicBotttomLeft from '../Images/Highlights/Highlight4.png';
-import HighlightPicBotttomCenter from '../Images/Highlights/Highlight5.png';
-import HighlightPicBotttomRight from '../Images/Highlights/Highlight6.png';
+import HighlightPicBotttomLeft from '../../Images/Highlights/Highlight4.png';
+import HighlightPicBotttomCenter from '../../Images/Highlights/Highlight5.png';
+import HighlightPicBotttomRight from '../../Images/Highlights/Highlight6.png';
 
 const Home = () =>
   <div className="col-container main-layout">
