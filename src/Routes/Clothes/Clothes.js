@@ -3,6 +3,7 @@ import './Clothes.css';
 
 // Components
 import TextBanner from '../../Components/TextBanner/TextBanner';
+import ClothesFilters from '../../Components/ClothesFilters/ClothesFilters';
 
 const Clothes = () =>
   <div>
@@ -14,6 +15,15 @@ const Clothes = () =>
       Give your off-duty wardrobe a new style saviour with some distressed boyfriend white jeans, just add a simple tee and 
       this season's must-have accessories. From figure flattering high waisted styles to low risers, there's a pair of 
       jeans to suit every shape. Stay true blue this season with our range of jeans.`}
+    />
+    <ClothesFilters
+      filters={[
+        { title: 'ΜΕΓΕΘΟΣ', options: [] },
+        { title: 'ΧΡΩΜΑ', options: [] },
+        { title: 'ΤΥΠΟΣ', options: [] },
+        { title: 'ΤΙΜΗ', options: [] },
+        { title: 'ΤΑΞΙΝΟΜΗΣΗ', options: [] },
+      ]}
     />
   </div>;
 

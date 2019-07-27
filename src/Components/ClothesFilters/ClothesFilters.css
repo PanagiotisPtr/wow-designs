@@ -1,0 +1,22 @@
+.filter-option .title {
+  font-size: 1.3em;
+}
+
+.filter-option > * {
+  margin-right: 0.5em;
+}
+
+.filter-option .icon {
+  height: 0.8em;
+}
+
+.clothes-filters > * {
+  margin-right: 4em;
+  margin-left: 4em;
+}
+
+.clothes-filters {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: solid #707070 1px;
+}

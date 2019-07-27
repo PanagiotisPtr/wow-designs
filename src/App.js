@@ -10,7 +10,7 @@ import Home from './Routes/Home/Home';
 import Clothes from './Routes/Clothes/Clothes';
 
 // Router
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // Logos
 import logo from './Images/NavBarLogo.png';
