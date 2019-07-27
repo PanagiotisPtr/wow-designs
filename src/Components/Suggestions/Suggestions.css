@@ -1,0 +1,15 @@
+.suggestions .separator {
+  height: 1px;
+  width: 52%;
+  background: #B1B1B1;
+}
+
+.suggestions .tab {
+  width: 10em;
+  font-size: 1.4em;
+  border-radius: 0.5em 0.5em 0em 0em;
+}
+
+.suggestions .tab-container {
+  width: 52%;
+}

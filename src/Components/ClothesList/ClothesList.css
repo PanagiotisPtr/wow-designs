@@ -9,6 +9,11 @@
   margin-bottom: 2em;
 }
 
+.smaller-images > * {
+  height: 20em;
+  width: 15em;
+}
+
 .item-details .title {
   font-size: 1.2em;
 }

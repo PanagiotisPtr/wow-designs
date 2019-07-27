@@ -4,6 +4,7 @@ import './Product.css';
 // Components
 import Showcase from '../../Components/Showcase/Showcase';
 import { InfoBar } from '../../Components/NavBar/NavBar';
+import Suggestions from '../../Components/Suggestions/Suggestions';
 
 // Images
 import ItemPhoto1 from '../../Images/Items/ItemPhoto1.png';
@@ -38,6 +39,29 @@ const Product = () =>
         code: '6666',
         price: '15,00€'
       }}
+    />
+
+    <Suggestions
+      tabs={[
+        { 
+          name: 'Επισης δειτε',
+          items: [
+            { photo: ItemPhoto1, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto2, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto3, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto3, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] }
+          ]
+        },{ 
+          name: 'Ειδατε προσφατα',
+          items: [
+            { photo: ItemPhoto1, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto2, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto3, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] },
+            { photo: ItemPhoto3, title: 'ασπρα πραματατια', price: '20.00€', colors: ['#E13131', '#F4B28F', '#FEFEFE'] }
+          ]
+        }
+      ]}
+      activeTab={0}
     />
   </div>;
 

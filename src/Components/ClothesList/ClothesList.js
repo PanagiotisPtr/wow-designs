@@ -13,10 +13,15 @@ const Item = ({photo, title, price, colors}) =>
     </div>
   </div>;
 
-const ClothesList = ({clothes}) =>
-  <div className="row-container clothes-list full-width full-height">
-    {clothes && clothes.map(item => <Item {...item} />
-    )}
-  </div>;
+const ClothesList = ({clothes, preview, size}) => {
+  const fullScreen = preview ? '' : 'full-width full-height';
+  const smaller = size === 'small' ? 'smaller-images' : '';
+  return (
+    <div className={'row-container clothes-list ' + fullScreen + ' ' + smaller}>
+      {clothes && clothes.map(item => <Item {...item} />
+      )}
+    </div>
+  );
+}
 
 export default ClothesList;
