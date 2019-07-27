@@ -21,7 +21,7 @@ const Thumbnails = ({photos, name, active}) =>
 
 const MainImage = ({src, alt}) =>
   <div>
-    <img src={src} alt={alt} className="main-image"/>;
+    <img src={src} alt={alt} className="main-image"/>
   </div>;
 
 const ColorGlob = ({color, active}) =>
