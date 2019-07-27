@@ -1,0 +1,14 @@
+.text-banner {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: rgba(230, 87, 240, 0.26);
+}
+
+.text-banner .title {
+  font-size: 2em;
+}
+
+.text-banner .description {
+  text-align: center;
+  width: 40vw;
+}
