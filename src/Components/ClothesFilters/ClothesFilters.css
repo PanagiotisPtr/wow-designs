@@ -18,5 +18,6 @@
 .clothes-filters {
   padding-top: 1em;
   padding-bottom: 1em;
-  border: solid #707070 1px;
+  border-top: solid #707070 1px;
+  border-bottom: solid #707070 1px;
 }

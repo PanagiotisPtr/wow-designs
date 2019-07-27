@@ -1,0 +1,31 @@
+.clothes-list {
+  flex-wrap: wrap;
+}
+
+.clothes-list .item-details {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.item-details .title {
+  font-size: 1.2em;
+}
+
+.item-details .price {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.item-details .colors > * {
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+.item-details .color-option {
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 100%;
+  border: solid black 1px;
+}
