@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-const PinkSeparator = ({}) => <div className="footer-separator"></div>;
+const PinkSeparator = () => <div className="footer-separator"></div>;
 
 const SectionOption = ({icon, label, link}) => 
   <div className="row-container align-center option-container">
@@ -11,7 +11,7 @@ const SectionOption = ({icon, label, link}) =>
     </span>
   </div>
 
-const CopyrightNotice = ({}) => 
+const CopyrightNotice = () => 
   <div className="col-container full-width align-center">
     <span>©2019 wowdesigns All Rights Reserved</span>
   </div>;
