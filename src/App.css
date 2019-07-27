@@ -40,6 +40,26 @@
   cursor: pointer;
 }
 
+.container-hspread-md > *{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.container-hspread-sm > *{
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+}
+
+.container-vspread-md > *{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container-vspread-sm > *{
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
 * {
   font-family: corporate-a, serif;
   font-weight: 400;

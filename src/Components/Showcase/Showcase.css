@@ -1,0 +1,111 @@
+.showcase .product-thumbnail {
+  height: 7em;
+  border-radius: 1em;
+}
+
+.showcase .active {
+  border: solid black 1px;
+}
+
+.showcase .product-details .title {
+  font-size: 2em;
+}
+
+.showcase .product-details .code {
+  color: rgba(72, 72, 72, 0.85);
+}
+
+.showcase .product-details .price {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.showcase .product-details .color-glob {
+  height: 2em;
+  width: 2em;
+  border-radius: 100%;
+}
+
+.showcase .product-details .inactive {
+  border: solid grey 1px;
+}
+
+.showcase .product-details .size-circle {
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+}
+
+.counter {
+  height: 1.8em;
+  width: 6em;
+  border-radius: 2em;
+  border: solid black 1px;
+}
+
+.counter .button-container {
+  margin-left: auto;
+  border-radius: 2em;
+  width: 3em;
+  height: 1.8em;
+  border: solid black 1px;
+  background: white;
+}
+
+.counter .sab-button {
+  font-weight: bold;
+  width: 2em;
+  height: 1.8em;
+}
+
+.counter .add-button {
+  font-weight: bold;
+  width: 2em;
+  height: 1.8em;
+  border-right: solid black 1px;
+}
+
+.counter .value {
+  margin-left: auto;
+}
+
+.purchase-button {
+  width: 20em;
+  border-radius: 2em;
+  background: rgba(253, 2, 81, 0.83);
+  border: solid #707070 1px;
+  color: white;
+}
+
+.purchase-button .button-text {
+  font-size: 1.1em;
+}
+
+.like-button-container {
+  height: 1.8em;
+  width: 1.8em;
+  border: solid black 1px;
+  border-radius: 100%;
+}
+
+.like-button-container .like-button {
+  height: 1em;
+}
+
+.info-seciton .section-title {
+  font-size: 1.3em;
+}
+
+.info-seciton .separator {
+  height: 1px;
+  width: 30em;
+  background: #707070;
+}
+
+.info-seciton .description {
+  width: 30em;
+}
+
+.product-details .sub-section-title {
+  margin-bottom: 0.5em;
+}
