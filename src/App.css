@@ -39,3 +39,9 @@
 .clickable {
   cursor: pointer;
 }
+
+* {
+  font-family: corporate-a, serif;
+  font-weight: 400;
+  font-style: normal;
+}
