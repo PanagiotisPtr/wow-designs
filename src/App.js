@@ -1,8 +1,15 @@
 import React from 'react';
 import './App.css';
+
+// Components
 import { NavBar } from './Components/NavBar/NavBar';
 import { Footer, CopyrightNotice } from './Components/Footer/Footer';
+
+// Routes
 import Home from './Routes/Home';
+
+// Router
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // Logos
 import logo from './Images/NavBarLogo.png';
@@ -21,64 +28,63 @@ import phoneIcon from './Images/phoneLogo.png';
 import emailIcon from './Images/emailLogo.png';
 import locationIcon from './Images/locationLogo.png';
 
-function App() {
-  return (
-    <div>
-      <NavBar
-        menu={['ΕΝΔΥΜΑΤΑ', 'ΝΕΕΣ ΑΦΙΞΕΙΣ', 'ΠΡΟΣΦΟΡΕΣ', 'PLUS-SIZE', 'ΤΣΑΝΤΕΣ']}
-        logos={{
-          left: [
-            {src: facebookLogo, alt: 'Facebook Logo'},
-            {src: telegramLogo, alt: 'Telegram Logo'},
-            {src: instagramLogo, alt: 'Instagram Logo'},
-          ],
-          main: {src: logo, alt: 'wow designs logo'},
-          right: [
-            {src: searchLogo, alt: 'Search Logo'},
-            {src: greeceLogo, alt: 'Greece Logo'},
-            {src: userLogo, alt: 'User Logo'},
-            {src: cartLogo, alt: 'Cart Logo'},
+const App = () =>
+  <div>
+    <NavBar
+      menu={['ΕΝΔΥΜΑΤΑ', 'ΝΕΕΣ ΑΦΙΞΕΙΣ', 'ΠΡΟΣΦΟΡΕΣ', 'PLUS-SIZE', 'ΤΣΑΝΤΕΣ']}
+      logos={{
+        left: [
+          {src: facebookLogo, alt: 'Facebook Logo'},
+          {src: telegramLogo, alt: 'Telegram Logo'},
+          {src: instagramLogo, alt: 'Instagram Logo'},
+        ],
+        main: {src: logo, alt: 'wow designs logo'},
+        right: [
+          {src: searchLogo, alt: 'Search Logo'},
+          {src: greeceLogo, alt: 'Greece Logo'},
+          {src: userLogo, alt: 'User Logo'},
+          {src: cartLogo, alt: 'Cart Logo'},
+        ]
+      }}
+    />
+    
+    <Router>
+      <Route path="/" exact component={Home} />
+    </Router>
+    
+    <Footer
+      sections={[
+        {
+          title: 'ΠΛΗΡΟΦΟΡΙΕΣ',
+          options: [
+            {icon: '', label: 'Ποιοί  είμαστε', link: '#'},
+            {icon: '', label: 'Όρη χρήσης', link: '#'},
+            {icon: '', label: 'Πολιτική απορρήτου (GDPR)', link: '#'},
+            {icon: '', label: 'Θέσεις Εργασίας', link: '#'},
+            {icon: '', label: 'Επικοινωνήστε μαζί μας', link: '#'}
           ]
-        }}
-      />
-      
-      <Home />
+        },{
+          title: 'ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ',
+          options: [
+            {icon: '', label: 'Τρόπη πληρωμής', link: '#'},
+            {icon: '', label: 'Αποστολή  προϊόντων  & κόστος', link: '#'},
+            {icon: '', label: 'Επιστροφές & Αλλαγές', link: '#'},
+            {icon: '', label: 'Παρακολούθηση παραγγελίας', link: '#'},
+            {icon: '', label: 'Οδηγός μεγεθών', link: '#'},
+            {icon: '', label: 'Συχνές ερωτήσεις', link: '#'}
+          ]
+        },{
+          title: 'Επικοινωνήστε μαζί μας',
+          options: [
+            {icon: phoneIcon, label: '+30 23330 23921', link: '#'},
+            {icon: emailIcon, label: ' info@wowdesigns.gr', link: '#'},
+            {icon: locationIcon, label: 'Βετσοπούλου 43 - 59300, Αλεξάνδρεια', link: '#'}
+          ]
+        }
+      ]}
+    />
 
-      <Footer
-        sections={[
-          {
-            title: 'ΠΛΗΡΟΦΟΡΙΕΣ',
-            options: [
-              {icon: '', label: 'Ποιοί  είμαστε', link: '#'},
-              {icon: '', label: 'Όρη χρήσης', link: '#'},
-              {icon: '', label: 'Πολιτική απορρήτου (GDPR)', link: '#'},
-              {icon: '', label: 'Θέσεις Εργασίας', link: '#'},
-              {icon: '', label: 'Επικοινωνήστε μαζί μας', link: '#'}
-            ]
-          },{
-            title: 'ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ',
-            options: [
-              {icon: '', label: 'Τρόπη πληρωμής', link: '#'},
-              {icon: '', label: 'Αποστολή  προϊόντων  & κόστος', link: '#'},
-              {icon: '', label: 'Επιστροφές & Αλλαγές', link: '#'},
-              {icon: '', label: 'Παρακολούθηση παραγγελίας', link: '#'},
-              {icon: '', label: 'Οδηγός μεγεθών', link: '#'},
-              {icon: '', label: 'Συχνές ερωτήσεις', link: '#'}
-            ]
-          },{
-            title: 'Επικοινωνήστε μαζί μας',
-            options: [
-              {icon: phoneIcon, label: '+30 23330 23921', link: '#'},
-              {icon: emailIcon, label: ' info@wowdesigns.gr', link: '#'},
-              {icon: locationIcon, label: 'Βετσοπούλου 43 - 59300, Αλεξάνδρεια', link: '#'}
-            ]
-          }
-        ]}
-      />
-
-      <CopyrightNotice />
-    </div>
-  );
-}
+    <CopyrightNotice />
+  </div>;
 
 export default App;
