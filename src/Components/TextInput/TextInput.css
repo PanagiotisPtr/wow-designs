@@ -1,0 +1,20 @@
+.text-input .input-container {
+  border: solid #707070 1px;
+  border-radius: 2em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.text-input .input-container input {
+  border: none;
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  min-width: 0%;
+  flex: 1;
+}
+
+.text-input .label {
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}
