@@ -1,0 +1,7 @@
+.main-button {
+  height: 2em;
+  border-radius: 1em;
+  background: rgba(253, 2, 81, 0.83);
+  border: solid #707070 1px;
+  color: white;
+}
