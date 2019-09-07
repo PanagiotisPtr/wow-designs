@@ -9,13 +9,13 @@ const FilterOption = ({title, options}) =>
     <div className="title">{title}</div>
     <img src={ChevronIcon} alt="chevron down" className="icon" />
     <div className="options col-container align-center">
-      {options && options.map(option => <span>{option}</span> )}
+      {options && options.map(option => <span key={'option_' + option}>{option}</span> )}
     </div>
   </div>;
 
 const ClothesFilters = ({filters}) =>
   <div className="row-container justify-center align-center full-width clothes-filters">
-    {filters && filters.map(filter => <FilterOption title={filter.title} options={filter.options}/> )}
+    {filters && filters.map(filter => <FilterOption key={'filter_' + filter} title={filter.title} options={filter.options}/> )}
   </div>;
 
 export default ClothesFilters;

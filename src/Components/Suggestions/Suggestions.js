@@ -20,7 +20,7 @@ const Tab = ({title, active}) => {
 const Suggestions = ({tabs, activeTab}) =>
   <div className="suggestions col-container align-center">
     <div className="row-container container-hspread-sm tab-container">
-      {tabs && tabs.map(tab => <Tab title={tab.name} active={tab===tabs[activeTab]} /> )}
+      {tabs && tabs.map((tab, index) => <Tab key={'tab_' + index} title={tab.name} active={tab===tabs[activeTab]} /> )}
     </div>
     <div className="separator"></div>
     <ClothesList size='small' preview={true} clothes={tabs[activeTab].items} />

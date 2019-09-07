@@ -7,7 +7,7 @@ const GalleryImage = ({image}) =>
 const Gallery = ({images}) =>
   <div className="col-container full-width align-center">
     <div className="row-container image-gallery">
-      {images && images.map(image => <GalleryImage image={image} />)}
+      {images && images.map((image, index) => <GalleryImage key={'image_' + index} image={image} />)}
     </div>
   </div>;
 

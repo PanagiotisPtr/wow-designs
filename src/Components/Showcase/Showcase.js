@@ -14,8 +14,8 @@ const Thumbnail = ({src, name, active}) =>
 
 const Thumbnails = ({photos, name, active}) =>
   <div className="col-container">
-    {photos && photos.map(photo =>
-      <Thumbnail src={photo} name={name} active={photo === active} />
+    {photos && photos.map((photo, index) =>
+      <Thumbnail key={'photo_' + index} src={photo} name={name} active={photo === active} />
     )}
   </div>;
 
@@ -36,8 +36,8 @@ const ColorSection = ({colors, activeColor}) =>
   <div className="col-container colors">
     <span className="sub-section-title">ΧΡΩΜΑΤΑ:</span>
     <div className="row-container colors-container container-hspread-sm">
-      {colors && colors.map(color =>
-        <ColorGlob color={color} active={color===activeColor}/>
+      {colors && colors.map((color, index) =>
+        <ColorGlob key={'color_' + index} color={color} active={color===activeColor}/>
       )}
     </div>
   </div>;
@@ -120,8 +120,9 @@ const Details = ({title, code, price, colors, activeColor,
     <div className="row-container">
       <QuantitySection quantity={1} />
     </div>
-    {info && info.map(section =>
+    {info && info.map((section, index) =>
       <InfoSection
+        key={'info_section_' + index}
         title={section.title}
         text={section.text}
         expand={info[activeInfo] === section}

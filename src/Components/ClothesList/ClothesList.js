@@ -8,7 +8,7 @@ const Item = ({photo, title, price, colors, sizeClass}) =>
     <span className="price">{price}</span>
     <div className="row-container justify-center colors">
       {colors && colors.map(color =>
-        <div className="color-option clickable" style={{background: color}}></div>
+        <div key={'color_' + color} className="color-option clickable" style={{background: color}}></div>
       )}
     </div>
   </div>;
@@ -18,7 +18,7 @@ const ClothesList = ({clothes, preview, size}) => {
   const smaller = size === 'small' ? 'smaller-image' : '';
   return (
     <div className={'row-container clothes-list ' + fullScreen}>
-      {clothes && clothes.map(item => { item.sizeClass = smaller; return <Item {...item} /> }
+      {clothes && clothes.map(item => { item.sizeClass = smaller; return <Item key={'item_' + item.title} {...item} /> }
       )}
     </div>
   );

@@ -22,6 +22,7 @@ const InfoSection = ({title, options}) =>
       <div className="title">{title}</div>
       {options && options.map(option =>
         <SectionOption
+          key={'option_' + option.label}
           icon={option.icon}
           label={option.label}
           link={option.link}
@@ -34,7 +35,7 @@ const Footer = ({sections}) =>
   <div className="footer">
     <PinkSeparator />
     <div className="section-container row-container full-width">
-      {sections && sections.map(section => <InfoSection title={section.title} options={section.options} /> )}
+      {sections && sections.map(section => <InfoSection key={'section_' + section.title} title={section.title} options={section.options} /> )}
     </div>
   </div>;
 

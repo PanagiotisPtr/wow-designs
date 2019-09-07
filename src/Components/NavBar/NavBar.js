@@ -5,13 +5,13 @@ const Logos = ({leftLogos, mainLogo, rightLogos}) =>
   <div className="row-container small-margin-top">
     
     <div className="row-container align-end stick-left small-margin-left">
-      {leftLogos && leftLogos.map(logo => <img className="small-logo" src={logo.src} alt={logo.alt} />)}
+      {leftLogos && leftLogos.map((logo, index) => <img key={'logo_' + index} className="small-logo" src={logo.src} alt={logo.alt} />)}
     </div>
     
     <img className="logo" src={mainLogo.src} alt={mainLogo.alt} />
 
     <div className="row-container align-end stick-right small-margin-right">
-      {rightLogos && rightLogos.map(logo => <img className="small-logo" src={logo.src} alt={logo.alt} />)}
+      {rightLogos && rightLogos.map((logo, index) => <img key={'logo_' + index} className="small-logo" src={logo.src} alt={logo.alt} />)}
     </div>
 
   </div>;
@@ -27,8 +27,8 @@ const InfoText = ({text, extra}) =>
 const InfoBar = ({info}) =>
   <div className="full-width row-container info-bar">
     
-    {info && info.map(detail =>
-      <InfoText text={detail.text} extra={detail.extra} />
+    {info && info.map((detail, index) =>
+      <InfoText key={'detail_' + index} text={detail.text} extra={detail.extra} />
     )}
 
   </div>
@@ -36,7 +36,7 @@ const InfoBar = ({info}) =>
 const Menu = ({options}) =>
   <div className="full-width row-container justify-center">
   <div className="row-container small-margin-top">
-    {options && options.map(option => <h2 className="link">{option}</h2>)}
+    {options && options.map((option, index) => <h2 key={'option_' + index} className="link">{option}</h2>)}
   </div>
   </div>;
 

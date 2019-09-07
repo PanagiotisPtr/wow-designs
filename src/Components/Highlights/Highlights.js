@@ -12,7 +12,7 @@ const Highlight = ({item}) =>
 
 const Highlights = ({items}) =>
   <div className="row-container justify-center align-center highlight-items">
-    {items && items.map(item => <Highlight item={item}/> )}
+    {items && items.map((item, index) => <Highlight key={'highlight_' + index} item={item}/> )}
   </div>;
 
 export default Highlights;
