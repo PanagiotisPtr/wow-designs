@@ -1,0 +1,18 @@
+.account-option {
+  border: solid 0.1em black;
+  font-size: 1.8em;
+  padding: 0.5em;
+  margin: 1.5em;
+  cursor: pointer;
+  width: 12em;
+}
+
+.account-option img {
+  height: 2.2em;
+  margin-right: 1em;
+}
+
+.account-page .greeting {
+  font-size: 1.2em;
+  margin-top: 3em;
+}

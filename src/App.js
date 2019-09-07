@@ -11,6 +11,7 @@ import Clothes from './Routes/Clothes/Clothes';
 import Product from './Routes/Product/Product';
 import Register from './Routes/Authenticate/Register';
 import Login from './Routes/Authenticate/Login';
+import Account from './Routes/Account/Account';
 
 // Router
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -58,6 +59,7 @@ const App = () =>
       <Route path="/product/" component={Product} />
       <Route path="/login/" component={Login} />
       <Route path="/signup/" component={Register} />
+      <Route path="/account/" component={Account} />
     </Router>
     
     <Footer
