@@ -1,0 +1,30 @@
+Front end notes:
+Outline for Account Details page:
+
+1) Side menu is a Router
+2) right hand side content is Router Outlet
+3) Make sub routes inside main folder. 
+4) link them.
+
+Note:
+Shouldn't need to create any new components since we already have the form components
+
+
+Database Notes:
+Need 2 things
+
+- User Accounts
+User {
+    username: string
+    password: string -- hashed password
+    email: string
+    firstName: string
+    lastName: string
+    gender: string
+    dateOfBirth: string -- DD/MM/YYYY
+    sendDeals: bool
+}
+
+Product {
+    // todo
+}
