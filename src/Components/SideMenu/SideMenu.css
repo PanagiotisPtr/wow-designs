@@ -1,0 +1,26 @@
+.side-menu .menu > * {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.side-menu .menu > span {
+  cursor: pointer;
+}
+
+.side-menu .menu > span:hover {
+  text-decoration: underline;
+}
+
+.side-menu .menu {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 2em;
+}
+
+.side-menu .menu > h3 {
+  margin-bottom: 2em;
+}
+
+.side-menu {
+  flex: 1;
+}

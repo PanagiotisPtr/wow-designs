@@ -13,6 +13,7 @@ import Register from './Routes/Authenticate/Register';
 import Login from './Routes/Authenticate/Login';
 import Account from './Routes/Account/Account';
 import AccountDetails from './Routes/AccountDetails/AccountDetails';
+import AccountAddresses from './Routes/AccountAddresses/AccountAddresses';
 
 // Router
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -62,6 +63,7 @@ const App = () =>
       <Route path="/signup/" component={Register} />
       <Route path="/account/" exact component={Account} />
       <Route path="/account/details" exact component={AccountDetails}></Route>
+      <Route path="/account/addresses" exact component={AccountAddresses}></Route>
     </Router>
     
     <Footer

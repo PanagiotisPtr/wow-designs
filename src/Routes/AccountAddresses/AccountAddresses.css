@@ -1,0 +1,23 @@
+.AccountAddresses .address {
+  width: 25em;
+  padding: 1em;
+}
+
+.AccountAddresses .address-grid {
+  width: 60vw;
+  margin-left: 5vw;
+  flex-wrap: wrap;
+}
+
+.AccountAddresses .address-grid > *{
+  margin: 2em;
+}
+
+.AccountAddresses .address .edit {
+  text-decoration: underline;
+}
+
+.AccountAddresses .address .delete {
+  text-decoration: underline;
+  color: rgba(253, 2, 81, 0.83);
+}

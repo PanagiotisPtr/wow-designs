@@ -1,28 +1,3 @@
-.AccountDetails .side-menu .menu > * {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.AccountDetails .side-menu .menu > span {
-    cursor: pointer;
-}
-
-.AccountDetails .side-menu .menu > span:hover {
-    text-decoration: underline;
-}
-
-.AccountDetails .side-menu .menu {
-    margin-top: 10vh;
-}
-
-.AccountDetails .side-menu .menu > h3 {
-    margin-bottom: 2em;
-}
-
-.AccountDetails .side-menu {
-    flex: 1;
-}
-
 .AccountDetails .settings-section .inputs {
     margin-right: 15vw;
     width: 30vw;
