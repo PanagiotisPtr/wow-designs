@@ -15,9 +15,11 @@
 
 .AccountAddresses .address .edit {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .AccountAddresses .address .delete {
   text-decoration: underline;
+  cursor: pointer;
   color: rgba(253, 2, 81, 0.83);
 }
