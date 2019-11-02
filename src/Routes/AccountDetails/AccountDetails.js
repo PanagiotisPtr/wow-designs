@@ -32,7 +32,6 @@ const AccountDetails = _ =>
             <h2>Στοιχεία λογαριασμού</h2>
             <h3>ΠΛΗΡΟΦΟΡΙΕΣ ΛΟΓΑΡΙΑΣΜΟΥ</h3>
             <div className="row-container">
-              <div style={{flex: 1}}></div>
               <div className="inputs" style={{flex: 1}}>
                 <TextInput label="Όνομα *" type="text"/>
                 <TextInput label="Επώνυμο *" type="text"/>
@@ -68,11 +67,11 @@ const AccountDetails = _ =>
                   <MainButton label="ΕΝΗΜΕΡΩΣΗ" style={{flex: 1}}/>
                 </div>
               </div>
+              <div style={{flex: 1}}></div>
             </div>
 
             <h2>Πληροφορίες Σύνδεσης</h2>
             <h3>ΠΛΗΡΟΦΟΡΙΕΣ ΛΟΓΑΡΙΑΣΜΟΥ</h3>
-            <div className="row-container">
               <div style={{flex: 1}}></div>
               <div className="inputs" style={{flex: 1}}>
                 <TextInput label="Τρέχων κωδικός πρόσβασης *" type="text"/>
@@ -83,6 +82,7 @@ const AccountDetails = _ =>
                   <MainButton label="ΕΝΗΜΕΡΩΣΗ" style={{flex: 1}}/>
                 </div>
               </div>
+              <div className="row-container">
             </div>
         </div>
     </div>

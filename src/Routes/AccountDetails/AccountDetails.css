@@ -34,8 +34,9 @@
 }
 
 .AccountDetails .settings-section .date-fields > * {
-    width: 10vw;
+    width: 6vw;
     margin-top: 0.5em;
+    margin-right: 1em;
 }
 
 .AccountDetails .settings-section .half-button-container > * {
