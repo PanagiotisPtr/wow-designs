@@ -14,6 +14,7 @@ import Login from './Routes/Authenticate/Login';
 import Account from './Routes/Account/Account';
 import AccountDetails from './Routes/AccountDetails/AccountDetails';
 import AccountAddresses from './Routes/AccountAddresses/AccountAddresses';
+import Wishlist from './Routes/Wishlist/Wishlist';
 
 // Router
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -64,6 +65,7 @@ const App = () =>
       <Route path="/account/" exact component={Account} />
       <Route path="/account/details" exact component={AccountDetails}></Route>
       <Route path="/account/addresses" exact component={AccountAddresses}></Route>
+      <Route path="/account/wishlist" exact component={Wishlist}></Route>
     </Router>
     
     <Footer

@@ -1,0 +1,40 @@
+.ClothesTable .ClothesTableRow .thumbnail {
+  height: 12.5em;
+  margin: 1em;
+}
+
+.ClothesTable .ClothesTableRow .item-details {
+  margin-top: 1em;
+}
+
+.ClothesTable {
+  border: solid 1px #9E9E9E;
+  border-collapse: collapse;
+}
+
+.ClothesTable .header {
+  font-size: 1.25em;
+  background: #F7F6F6;
+}
+
+.ClothesTable .header > *{
+  padding: 1em;
+  border: solid 1px #9E9E9E;
+}
+
+.ClothesTable .ClothesTableRow > *{
+  padding: 1em;
+  border: solid 1px #9E9E9E;
+}
+
+.ClothesTable .ClothesTableRow .price {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.ClothesTable .ClothesTableRow .delete {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 2em;
+  font-size: 1.2em;
+}

@@ -4,6 +4,9 @@ import './Showcase.css';
 // icons
 import HeartIcon from '../../Images/HeartLogo.png';
 
+// Components
+import Counter from '../../Components/Counter/Counter';
+
 const Thumbnail = ({src, name, active}) => 
   <div>
     { active
@@ -69,15 +72,6 @@ const SizeSection = ({sizes, activeSize}) =>
 
 const Availability = ({availability}) =>
   <div>ΔΙΑΘΕΣΗΜΟΤΗΑ: {availability}</div>
-
-const Counter = ({value}) =>
-  <div className="row-container counter align-center">
-    <span className="value">{value ? value : 0}</span>
-    <div className="row-container button-container justify-center align-center">
-      <div className="add-button clickable col-container align-center justify-center"> <span>+</span> </div>
-      <div className="sab-button clickable col-container align-center justify-center"> <span>-</span> </div>
-    </div>
-  </div>;
 
 const PurchaseButton = () =>
   <div className="clickable purchase-button col-container justify-center align-center">
